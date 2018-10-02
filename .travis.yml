@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - '0.10'
 before_script:
-  - 'npm install'
+  - 'sudo npm install'
 script:
   - echo "Building..."
   - npm run build
