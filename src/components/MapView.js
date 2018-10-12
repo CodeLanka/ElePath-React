@@ -1,5 +1,5 @@
-import React from 'react';
-import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
+import React from "react";
+import { withGoogleMap, GoogleMap, Marker } from "react-google-maps";
 
 export const MapView = withGoogleMap((props) =>
     <GoogleMap defaultZoom={8}
