@@ -1,8 +1,16 @@
 language: node_js
+
 node_js:
   - '0.10'
+
+env:
+  - CI=true
+
 before_script:
-  - 'sudo npm install'
+  - npm install
+
+cache: npm
+
 script:
-  - echo "Building..."
+  - npm test
   - npm run build
