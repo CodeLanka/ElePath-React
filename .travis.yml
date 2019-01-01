@@ -1,16 +1,16 @@
+sudo: required
+dist: trusty
 language: node_js
 
 node_js:
-  - '0.10'
+  - 8
 
-env:
-  - CI=true
+cache:
+  directories:
+    - node_modules
 
-before_script:
-  - npm install
-
-cache: npm
-
-script:
-  - npm test
-  - npm run build
+matrix:
+  include:
+    # Run npm tests and get code coverage matrix
+    - script:
+      - npm test
