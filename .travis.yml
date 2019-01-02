@@ -1,16 +1,16 @@
-sudo: required
-dist: trusty
 language: node_js
-
 node_js:
-  - 8
-
+  - "stable"
 cache:
   directories:
     - node_modules
-
-matrix:
-  include:
-    # Run npm tests and get code coverage matrix
-    - script:
-      - npm test
+script:
+  - npm test
+  - npm run build
+deploy:
+  provider: surge
+  skip_cleanup: true
+  domain: elepath-react.surge.sh
+  project: ./build/
+on:
+  branch: master/..
