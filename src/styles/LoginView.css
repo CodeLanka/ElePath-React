@@ -1,0 +1,39 @@
+.LoginView {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.LoginView h1 {
+  font-size: 18px;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.LoginView_Form {
+  width: 50%;
+}
+
+.LoginView_Form button {
+  padding: 8px;
+  font-size: 14px;
+  width: 50%;
+  background-color: rgb(236, 236, 236);
+}
+
+.LoginView_Form_InputContainer {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.LoginView_Form_InputContainer label {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.LoginView_Form_InputContainer input {
+  padding: 10px;
+  border: none;
+  background-color: rgb(247, 247, 247);
+}
